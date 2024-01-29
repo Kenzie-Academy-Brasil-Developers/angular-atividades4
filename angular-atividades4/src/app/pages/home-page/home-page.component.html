@@ -5,6 +5,7 @@
             <span>{{ post.category }} | {{ post.author }}</span>
             <h3>{{ post.title }}</h3>
             <p>{{ post.content }}</p>
+            <a [routerLink]="redirectURL(post.id)">Ler mais</a>
         </li>
     </ul>
 </main>    

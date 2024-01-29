@@ -1,0 +1,8 @@
+<main>
+    <div *ngIf="post">
+        <span>{{ post.category }} - {{ post.author }}</span>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.content }}</p>
+    </div>
+    <p *ngIf="!post">Carregando...</p>
+</main>    

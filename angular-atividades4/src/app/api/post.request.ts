@@ -11,4 +11,8 @@ export class PostRequest{
     getPostList(){
         return this.http.get<IPost[]>(`${this.BASE_URL}/news`)
     }
+
+    getPost(id: string){
+        return this.http.get<IPost>(`${this.BASE_URL}/news/${id}`);
+    }
 }
